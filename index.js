@@ -34,10 +34,10 @@ app.use((req,res,next)=>{
 });
 
 
-app.use((req,res,next)=>{
+/*app.use((req,res,next)=>{
 	res.render('maintain.hbs');
 });
-
+*/
 app.use(express.static(__dirname+'/public'));
 app.get('/',(req,res)=>{
 	//res.send("hello express");
@@ -66,5 +66,5 @@ app.get('/bad',(req,res)=>{
 });
 
 app.listen(port,()=>{
-	console.log(port)
+	console.log(port);
 });
