@@ -49,10 +49,20 @@ app.get('/',(req,res)=>{
 
 });
 
+
+
 app.get('/about',(req,res)=>{
 	res.render('about.hbs',{
 		pageTitle:"About Us",
 		date:new Date().getFullYear(),
+	});
+
+});
+
+app.get('/project',(req,res)=>{
+	//res.send("hello express");
+	res.render('project.hbs',{
+		pageTitle:"Project Page",
 	});
 
 });
